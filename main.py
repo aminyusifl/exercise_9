@@ -1,8 +1,8 @@
 import requests
 
-def get_coin_price(symbol):
-    symbol = symbol.upper()
-    url = f"https://api.binance.com/api/v3/ticker/24hr?symbol={symbol}"
+def get_coin_price(coin):
+    coin = coin.upper()
+    url = f"https://api.binance.com/api/v3/ticker/24hr?symbol={coin}"
 
     headers = {
         "User-Agent": "Mozilla/5.0",
